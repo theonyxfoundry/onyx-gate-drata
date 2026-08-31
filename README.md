@@ -75,8 +75,8 @@ pip install onyx-gate-drata      # standard library only
   the API base. `--dry-run` writes the evidence bundle locally with no network
   calls, so you can inspect exactly what would be filed.
 - **Onyx side:** run the gateway with `--log trail.jsonl`. Every integration
-  writes the same trail — the [CrewAI tool guard](https://github.com/jstewart-axyom/onyx-gate-crewai),
-  the [Obot MCP Gateway filter](https://github.com/jstewart-axyom/onyx-gate-obot),
+  writes the same trail — the [CrewAI tool guard](https://github.com/theonyxfoundry/onyx-gate-crewai),
+  the [Obot MCP Gateway filter](https://github.com/theonyxfoundry/onyx-gate-obot),
   the Claude Code enforcement hook, or direct HTTP/MCP calls.
 - Schedule `file` (cron, CI, a workflow) for recurring evidence: each filing
   carries the current chain head, so consecutive filings chain into each

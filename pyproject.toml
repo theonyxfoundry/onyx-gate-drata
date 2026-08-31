@@ -33,7 +33,7 @@ onyx-gate-drata = "onyx_gate_drata.cli:main"
 
 [project.urls]
 Homepage = "https://onyxfoundry.ai"
-Repository = "https://github.com/jstewart-axyom/onyx-gate-drata"
+Repository = "https://github.com/theonyxfoundry/onyx-gate-drata"
 
 [tool.setuptools.packages.find]
 where = ["src"]
