@@ -98,6 +98,14 @@ for line in open("trail.jsonl", "rb").read().splitlines():
 print("verified; head:", expected)
 ```
 
+Records may carry **additive keys the rule never reads** — `engine` (the writing
+Onyx build's product version, stamped since Onyx 0.3.0) and, inside an embedded
+certificate, `format` and `producer` (also since 0.3.0). The chain hashes the
+whole line, so they are protected without being trusted, and this verifier
+ignores keys it does not read. The construction it implements is exactly the
+`onyx-audit-trail-genesis-v1` tag above; a future construction would be a new
+tag, never a silent reinterpretation.
+
 ## Scope, honestly
 
 - **The chain detects edits, deletions, and reordering within the file** — it
